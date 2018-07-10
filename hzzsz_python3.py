@@ -17,26 +17,25 @@ for i in str_test:
         flag=False
 
 #print(process)
-tmp=0
+number=0
 result=[]
-bigger=False 
 temp=0
 for i in process:
     result.append(int)
     for j in i:
         if j in chi_number.keys():
            if len(i)==1:
-                tmp =tmp+chi_number[j]
+                number =number+chi_number[j]
            else:
             temp=chi_number[j]
         else:
-            if tmp<chi_times[j]:
-                tmp=tmp*chi_times[j]
-            tmp=tmp+temp*chi_times[j]
-    tmp=tmp+temp
-    string_tmp=str(tmp)
-    result[-1]=string_tmp;
-    tmp=0
+            if number<chi_times[j]:
+                number=number*chi_times[j]
+            number=number+temp*chi_times[j]
+    number=number+temp
+    string_number=str(number)
+    result[-1]=string_number;
+    number=0
     temp=0
 print(str_test)
 for i in process:
